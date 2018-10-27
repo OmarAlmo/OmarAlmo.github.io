@@ -1,3 +1,3 @@
-# omaralmoallim.github.io
+# omaralmo.github.io
 
 Welcome to my website :) 

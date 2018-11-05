@@ -1,12 +1,16 @@
-.center {
-	text-align: center;
-}
-
 body {
-	margin: 2cm auto;
-	text-align: justify;
-	/* Allows for actually seeing the 'justify' wrapping effect. */
-	max-width: 20cm;
-	font-size: 1.1em;
-	color: #444;
-}
+    background-color: solid  #ebedef ;
+	front-family: Ariel, Verdana, sans-serif;}
+	h1 {
+	color: #ecf0f1   ;}
+	h2, h3 {
+	color:  #066220;}
+	p {
+	color: #212f3d ;}
+
+body{
+    width: 1750px;
+    border: 6px solid #094875 ;
+    padding: 25px;
+    margin: 50px;}
+

@@ -2,20 +2,20 @@ body {
     background-color: solid  #ebedef ;
 	front-family: Ariel, Verdana, sans-serif, "Courier New", Courier, monospace;}
 	h1 {
-	color: #ecf0f1   ;}
+	color: #003B3B   ;}
 	
 	nameHeading {
 		font: monospace;
 		color: #ecf0f1;}
-	h2, h3 {
-	color:  #066220;}
 	p {
 	color: #212f3d ;}
 
-/*body{
-    width: 1750px;
+body{
+    /*width: 1750px;
     border: 2px solid #094875 ;
-    padding: 25px;
-	margin: 50px;}
-*/
+	padding: 25px;
+	*/
+	margin: 2cm;
+}
+
 

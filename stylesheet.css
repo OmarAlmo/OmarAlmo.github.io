@@ -1,8 +1,14 @@
+*{
+	background: #f4f4f4;
+}
+.head {
+	color: #06356b;
+	text-align: center;
+}
 body {
     background-color: solid  #ebedef ;
-	front-family: Ariel, Verdana, sans-serif, "Courier New", Courier, monospace;}
-	h1 {
-	color: #003B3B   ;}
+	front-family: Ariel, Verdana, sans-serif, "Courier New", Courier, monospace;
+}
 	
 	nameHeading {
 		font: monospace;
@@ -10,12 +16,9 @@ body {
 	p {
 	color: #212f3d ;}
 
-body{
-    /*width: 1750px;
-    border: 2px solid #094875 ;
-	padding: 25px;
-	*/
-	margin: 2cm;
+.container{
+	width:60%;
+	margin:auto;
 }
 
 

@@ -9,15 +9,20 @@ body {
     background-color: solid  #ebedef ;
 	front-family: Ariel, Verdana, sans-serif, "Courier New", Courier, monospace;
 }
-	
-	nameHeading {
-		font: monospace;
-		color: #ecf0f1;}
-	p {
-	color: #212f3d ;}
+nameHeading {
+	font: monospace;
+	color: #ecf0f1;
+}
+
+p {
+color: #212f3d ;
+}
 
 .container{
 	width:60%;
 	margin:auto;
 }
 
+.social-media-buttons{
+	size: 30%
+}

@@ -14,13 +14,10 @@ nameHeading {
 	color: #ecf0f1;
 }
 
-p {
-color: #212f3d ;
-}
-
 .container{
 	width:60%;
 	margin:auto;
+	color: #212f3d ;
 }
 
 .social-media-buttons{

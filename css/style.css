@@ -12,7 +12,8 @@ body {
   vertical-align: middle;
   width: 130px;
   height: 130px;
-  border-radius: 50%
+  border-radius: 90%;
+  object-fit: cover;
 }
 
 .container {

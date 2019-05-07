@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Omar cover Letter</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/tabstyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<div class="topbar">
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'cover_letter')" id="defaultOpen">Cover Letter</button>
+        <button class="tablinks" onclick="openCity(event, 'timeline')">Story time</button>
+    </div>
+</div>
+
+<body class="containerB">
+
+    <!-- Tab Cover Letter -->
+    <div id="cover_letter" class="tabcontent">
+        <h1>Hi 🙂</h1>
+        <hr>
+        <p>We meet again! I hope you are having a good day so far 🙂 and it was amazing meeting you time and time
+            again
+            at the various events from your internship open house 2 years ago to CSGames this year (super smash was
+            really
+            fun!!). Now let me start by the simple meme 😂 and then lets begin! <br><br>
+            <img src="images/30b7wa.jpg" tag="img" class="center">
+        </p>
+
+        <br>
+
+        <h1>
+            <font color="#5A848E">About</font> Me
+        </h1>
+        <p> My name is Omar Almoallim, I am a 3rd year Computer Science student at the university of Ottawa.I
+            started
+            university studying Biopharmaceutical Sciences for 2 years before switching to CS. Why you may ask?
+            Well simply it was not for me. For as long as I can remember I always enjoyed technology and was vert
+            fascinated
+            by it to the point where I would download an editor and just stare at it and seeing how amazing it was.
+            Then it
+            finally hit me that THIS IS WHAT I WANT TO DO! <br><br>
+            <img src="https://media.giphy.com/media/1AjVbjH9Xc4yaQCzBV/giphy.gif" class="center"><br>
+            Eventhough it took me few months to finally decide, I could not be happier about that decision today.
+            With my
+            interest and growing expereince I have been very invested to building applications that would improve
+            our world
+            and impacting people directly, and this has me fired up... literly.
+            <strong>Today, I am more motivated than ever to build on my experience to finally see
+                <span class="label bg-purple text-uppercase">Pro</span> under my github portfolio. </strong>
+
+        </p>
+
+        <h1>
+            <font color="#5A848E">Why</font> Me?
+        </h1>
+        <p> Ever since I switched into CS everything changed, as if I was let go from cage... yea really. I mean
+            science and
+            biochemistry is interesting and all but the enviroment and community was simply not right. From that day
+            on,
+            persuing what I am passionate about became a million times more fun. What's even better, is just how
+            challenging
+            things can get which makes it a whole lot more fun to really go very deep and solve challenges. This is
+            when my
+            attidue shifted from this...<br><br>
+            <img src="https://media.giphy.com/media/OwhrqQmSu36GQ/giphy.gif" class="center"><br>
+            to this...
+            <img src="https://media.giphy.com/media/d4zHnLjdy48Cc/giphy.gif" class="center"><br>
+            Now my main focus and interest is web app security. I figured in order to be good at breaking apps, and
+            researching for vulnaribitlies I should know how a web application works. Thus, I am very motivated to
+            go over and beyond to really learn and understand. I don't give up easily... in other words I'm a long term
+            investment to be able to say this...<br><br>
+            <img src="https://media.giphy.com/media/5bHIZ3ok4UpJS/giphy.gif" class="center"><br>
+        </p>
+
+
+        <h1>
+            <font color="#5A848E">Why</font> ---?
+        </h1>
+        <p></p>
+
+    </div>
+
+    <!-- Tab Timeline -->
+    <div id="timeline" class="tabcontent">
+    </div>
+
+
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>

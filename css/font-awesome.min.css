@@ -103,3 +103,11 @@
 .social-button--twitter::after {
     background: #55acee;
 }
+
+.social-button--chess {
+    color: #125e2f;
+}
+
+.social-button--chess::after {
+    background: #125e2f;
+}

@@ -1,0 +1,158 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+	
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/icons/apple-touch-icon.png?v=qA3OXqyw77' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{'/assets/img/icons/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{'/assets/img/icons/favicon-16x16.png?v=qA3OXqyw77' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/img/icons/manifest.json?v=qA3OXqyw77' | relative_url }}">
+  <link rel="mask-icon" href="{{ '/assets/img/icons/safari-pinned-tab.svg?v=qA3OXqyw77' | relative_url }}" color="#5bbad5">
+		
+  <!--[if IE]><link rel="shortcut icon" href="/assets/img/icons/favicon.ico?v=qA3OXqyw77"><![endif]-->
+  <link rel="shortcut icon" href="{{ '/assets/img/icons/favicon.ico?v=qA3OXqyw77' | relative_url }}">
+  <meta name="apple-mobile-web-app-title" content="Sleek">
+  <meta name="application-name" content="Sleek">
+  <meta name="msapplication-config" content="{{ '/assets/img/icons/browserconfig.xml?v=qA3OXqyw77' | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+	
+	
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+	
+  {% if site.google_tag_manager %}
+
+    {% include gtm.html %}
+
+  {% endif %}
+
+  <style class="inlineCSS">
+
+    {% include critical.css %}
+
+  </style>
+  <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"></noscript>
+  <script type="text/javascript">
+   {% include loadCss.js %}
+  </script>
+	 
+	 
+	 <style>
+	 	.social-buttons {
+	 	  display: flex;
+	 	  flex-wrap: wrap;
+	 	  justify-content: center;
+	 	  margin-top: -10px;
+	 	}
+
+	 	.social-buttons__button {
+	 	  margin: 10px 5px 0;
+	 	}
+
+	 	.social-button {
+	 	  position: relative;
+	 	  display: flex;
+	 	  justify-content: center;
+	 	  align-items: center;
+	 	  outline: none;
+	 	  width: 70px;
+	 	  height: 70px;
+	 	  text-decoration: none;
+	 	}
+
+	 	.social-button__inner {
+	 	  position: relative;
+	 	  display: flex;
+	 	  align-items: center;
+	 	  justify-content: center;
+	 	  width: calc(100% - 2px);
+	 	  height: calc(100% - 2px);
+	 	  border-radius: 100%;
+	 	  background: #fff;
+	 	  text-align: center;
+	 	}
+
+	 	.social-button i,
+	 	.social-button svg {
+	 	  position: relative;
+	 	  z-index: 1;
+	 	  transition: 0.3s;
+	 	}
+
+	 	.social-button i {
+	 	  font-size: 28px;
+	 	}
+
+	 	.social-button svg {
+	 	  height: 40%;
+	 	  width: 40%;
+	 	}
+
+	 	.social-button::after {
+	 	  content: "";
+	 	  position: absolute;
+	 	  top: 0;
+	 	  left: 50%;
+	 	  display: block;
+	 	  width: 0;
+	 	  height: 0;
+	 	  border-radius: 100%;
+	 	  transition: 0.3s;
+	 	}
+
+	 	.social-button:focus,
+	 	.social-button:hover {
+	 	  color: #fff;
+	 	}
+
+	 	.social-button:focus::after,
+	 	.social-button:hover::after {
+	 	  width: 100%;
+	 	  height: 100%;
+	 	  margin-left: -50%;
+	 	}
+
+	 	.social-button--mail {
+	 	  color: #0072c6;
+	 	}
+
+	 	.social-button--mail::after {
+	 	  background: #0072c6;
+	 	}
+
+	 	.social-button--linkedin {
+	 	  color: #0077b5;
+	 	}
+
+	 	.social-button--linkedin::after {
+	 	  background: #0077b5;
+	 	}
+
+	 	.social-button--github {
+	 	  color: #6e5494;
+	 	}
+
+	 	.social-button--github::after {
+	 	  background: #6e5494;
+	 	}
+
+	 	.social-button--twitter {
+	 	  color: #55acee;
+	 	}
+
+	 	.social-button--twitter::after {
+	 	  background: #55acee;
+	 	}
+
+	 	.social-button--chess {
+	 	    color: #125e2f;
+	 	}
+
+	 	.social-button--chess::after {
+	 	    background: #125e2f;
+	 	}
+	 </style>
+	 
+</head>

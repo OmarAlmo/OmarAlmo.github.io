@@ -27,7 +27,7 @@ Of course I'm always looking for new oppertunities, so reach out to me!  🙂
 ![mongodb]({{'/assets/img/icons/mongodb.png' | relative_url }} "MongoDB")
 
 
-![docker]({{'/assets/img/icons/docker.png' | relative_url }} "Docker")
+<!-- ![docker]({{'/assets/img/icons/docker.png' | relative_url }} "Docker") -->
 ![networking]({{'/assets/img/icons/modem.png' | relative_url }} "Networking")
 ![security]({{'/assets/img/icons/security.png' | relative_url }} "Security")
 

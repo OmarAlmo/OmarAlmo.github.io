@@ -1,59 +1,108 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-04T14:50:14-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Omar Almoallim</title><entry><title type="html">Capital One Data Breach</title><link href="http://localhost:4000/category/data-breach/security/capital-one-data-breach" rel="alternate" type="text/html" title="Capital One Data Breach" /><published>2019-10-18T00:00:59-04:00</published><updated>2019-10-18T00:00:59-04:00</updated><id>http://localhost:4000/category/data-breach/security/capital-one-data-breach</id><content type="html" xml:base="http://localhost:4000/category/data-breach/security/capital-one-data-breach">&lt;h4 id=&quot;summary&quot;&gt;Summary:&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-02T14:10:11+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Omar Almoallim</title><entry><title type="html">Concept-Based Image Retrieval</title><link href="http://localhost:4000/category/ir/information%20retrieval/cbir" rel="alternate" type="text/html" title="Concept-Based Image Retrieval" /><published>2020-10-15T07:00:59+03:00</published><updated>2020-10-15T07:00:59+03:00</updated><id>http://localhost:4000/category/ir/information%20retrieval/cbir</id><content type="html" xml:base="http://localhost:4000/category/ir/information%20retrieval/cbir">&lt;h2 id=&quot;what-is-concept-based-image-retrieval&quot;&gt;What is Concept-Based Image Retrieval?&lt;/h2&gt;
+&lt;p&gt;Concept-Based Image Retrieval (CBIR) allows the retrieval of images based on what is present in the photo rather than the associated tags that come with the photo, including metadata. The need for a CBIR has increasingly become more important as we move towards a more media driven society where camera-enabled phones are practically everywhere.&lt;/p&gt;
 
-&lt;p&gt;Between March and April of 2019, Paige Thompson access unauthorized servers belonging to Capital One Financial Corporation. Capital One (CO) is a company that issues credit cards, loans, and provides other financial services. In the attack, Thompson obtained access to names, addresses, phone numbers, emails, dates of birth, and Social Security Numbers (SSN) and Social Insurance Numbers (SIN) of approximately 100 million Americans, and 6 million Canadians. The attack was carried out by getting access to database servers of CO and execurting 3 different commands. She was caught and criminally charged. This report is a detailed summary of the important events that occurred.&lt;/p&gt;
+&lt;p&gt;In order to implement a Concept-Based Image Retrieval, the system first and foremost requires to understand images at a high level. This presents two particular problems. Firstly, the intention-gap, a non-technical issue. That is a user intends to search something specific, however it is very broad or has many meanings[1]. A great example of the intention gap iis a user query of ‘ apple’ and in return is presented with Apple Inc. rather than the fruit, or vise-versa (even through an image query). The second problem is the image similarity is very far off the users’ query, this is called the semantic gap. This technical problem is one of the challenging aspects of Content-Based Image Retrieval which are being heavily studied and in this paper 2 models will be discussed.&lt;/p&gt;
 
-&lt;h4 id=&quot;about-the-attack&quot;&gt;About the attack:&lt;/h4&gt;
+&lt;p&gt;Ultimately, CBIR allows the retrieval of visual documents using the image itself rather than textual information of the image.&lt;/p&gt;
 
-&lt;p&gt;July 17th, Capital One received an email from an unknown person, stating that there seems to be private data on someone’s GitHub. Here, Capital One examined the GitHub account and found more than 700 files of company data, and IP addresses of specific servers. In addition, the files was timestamped April 21st, approximately two months before the email was received.&lt;/p&gt;
+&lt;h2 id=&quot;applications-of-cbir&quot;&gt;Applications of CBIR&lt;/h2&gt;
+&lt;p&gt;CBIR can be used for various activities. A really important and fascinating one is tattoo image retrieval. Tattoos are becoming more common today with individuals and thus have become a method for human identification. Tattoo pigments are embedded in the skin to a level that become permanent on some level. Over years, tattoos have helped identify criminals[​ 3]​ - even more so when the tattoos have some hidden meaning that becomes easier to identify when there is a dataset of featured images - and also identified victims of different attacks and disasters such as the 2004 Asian tsunami. Another application are individuals who want to find images that are online without the individuals permission.&lt;/p&gt;
 
-&lt;p&gt;The commands were able to be executed at Capital One servers due to a server misconfiguration, which is one of the more common misconfigurations that is known by security researchers, as reported by UpGuard (a cybersecurity services firm). The commands executed by the attacker are…&lt;/p&gt;
+&lt;h2 id=&quot;components-of-cbir&quot;&gt;Components of CBIR&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Query Formation&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;p&gt;Query formation is a crucial step in image retrieval as it has a significant impact on the results. The most common query type in CBIR is a query by example (QBE), that is providing an image similar to what the user wants to find. Another query type is by sketch, and more types are shown in the image below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/cbir/queryformation.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Image Representation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Image representation is how images will be compared. When analyzing images, the low-level features, such as the colors, shapes become somewhat useless to use directly for comparison with images as visual objects and scenes undergo various transformations​. Shown below is a way of image extraction, different parts of the image are recognized, then converted into an understandable quantitative description.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/cbir/imagerep.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Image Indexing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here is how the images are stored in the database, and specifically how they are organized. This is important as different ways to organize or index can have an impact on how efficient and fast the retrieval is.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Concept Based Image Retrieval allows an effective way to access visual data and retrieval of it. A more technical report and details can be found &lt;a href=&quot;/assets/img/posts/cbir/report.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">What is Concept-Based Image Retrieval? Concept-Based Image Retrieval (CBIR) allows the retrieval of images based on what is present in the photo rather than the associated tags that come with the photo, including metadata. The need for a CBIR has increasingly become more important as we move towards a more media driven society where camera-enabled phones are practically everywhere.</summary></entry><entry><title type="html">Lightweight Cryptography</title><link href="http://localhost:4000/category/cryptography/lwc" rel="alternate" type="text/html" title="Lightweight Cryptography" /><published>2020-09-05T07:00:59+03:00</published><updated>2020-09-05T07:00:59+03:00</updated><id>http://localhost:4000/category/cryptography/lwc</id><content type="html" xml:base="http://localhost:4000/category/cryptography/lwc">&lt;h2 id=&quot;cryptography&quot;&gt;Cryptography&lt;/h2&gt;
+&lt;p&gt;Cryptography is one the most important security elements of computer systems and communications today. The idea is to ensure the confidentiality and integrity of information. Cryptography consists of two parts: encryption and decryption. Encryption converts your message/ data into an unreadable text that cannot be understood. Where as decryption is the opposite and converts the encrypted message to make to readable.&lt;/p&gt;
+
+&lt;h2 id=&quot;lightweight-cryptography&quot;&gt;Lightweight Cryptography&lt;/h2&gt;
+&lt;p&gt;Over recent years, technology with constrained resources have become more common and popular in various industries ranging from agriculture to smart cities. The current conventional cryptographic algorithms such as AES were created for servers, desktop computers, machines which are not restricted in resources. Meaning using those algorithms on constrained devises are doable but do not match a desired performance. Thus, lightweight cryptographic algorithms become the solution to secure communications in those constrained devises.&lt;/p&gt;
+
+&lt;p&gt;In 2013, National Institute of Standards and Technology (NIST) began an investigation to review if a new standard is required. Two years later in 2015 NIST opened a proposal to process, evaluate and standardize lightweight cryptographic algorithms.&lt;/p&gt;
+
+&lt;p&gt;The proposal’s aim for the algorithms to be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Block ciphers&lt;/li&gt;
+  &lt;li&gt;Message authentication codes&lt;/li&gt;
+  &lt;li&gt;Authenticated encryption schemes&lt;/li&gt;
+  &lt;li&gt;Cryptographic permutations&lt;/li&gt;
+  &lt;li&gt;Hash functions&lt;/li&gt;
+  &lt;li&gt;Stream ciphers&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;post-quantum safe or easily replaced by post-quantum security&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is important to mention that LWC is not here to replace the current algorithms, but rather introduce something new in the field, as it is crucial that the devices can “speak” the same language.&lt;/p&gt;
+
+&lt;h2 id=&quot;applications-of-lwc&quot;&gt;Applications of LWC&lt;/h2&gt;
+&lt;p&gt;There are two major targets for LWC&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Obtains security credentials for a particular account, this allowed the access to Capital One buckets.&lt;/li&gt;
-  &lt;li&gt;Lists all the names of folders in the storage space.&lt;/li&gt;
-  &lt;li&gt;Syncs and copy all the data.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Microcontrollers &lt;br /&gt;
+ Microcontrollers are present in almost all modern technology today, whether that would be in a home appliance such as a fridge or a microwave, or in industrial instrumentation devices and process control devices. Unlike computers and workstations today, microcontrollers are dedicated to perform a specific task and execute single applications.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Radio-Frequency Identification (RFID) Tags and Sensor Networks &lt;br /&gt;
+ RFID tags have a vast use in industries ranging from farming with animal microchip implants, to the payment systems and supply chain. On the other hand, network sensors applications such as health applications to monitor body temperatures and blood pressures, environmental monitoring of air and water quality, this is particularly important with the research and investments happening with smart cities. Thus, both those devises generally contain significant energy and computation constraints.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The first step Capital One did after learning of this was to test out those commands, and the results turned out positive. That it did in fact function to obtain private data and extract them. Then, Capital One compared the 700+ files with their tested files and were able to confirm that it is also a match. To further investigate, the server command log files reflected the fact that the commands were executed on April 21st which matched the timestamp on the leaked files. The primary data copied was related to credit card applications, which some included SSN and SIN, although they were encrypted, other information such as names, addresses, dates of birth were not. Furthermore, of this data, Capital One estimates approximately 120 thousand SSN and 77 thousand bank account numbers were obtained.&lt;/p&gt;
+&lt;p&gt;As mentioned above, the current cryptographic algorithms today such as AES, SHA-2, etc. are made for desktop and server environments where the power and computational constraints are non-existent. That does not mean it is not possible to deploy those conventional algorithms, but rather it has a negative impact of the security performance, thus proving the important need for lightweight cryptographic algorithms.&lt;/p&gt;
 
-&lt;p&gt;Capital One later started tracing IP addresses found on their logs, and it showed number of connections and attempted connections using the same method (through the server misconfiguration) that came from various IP addresses including: TOR exit nodes, and specific IP addresses that began with 46.246. This beginning of this address belongs to IPredator, a Virtual Private Network (VPN) provider that is based in Sweden. The other connections came from The Onion Router (TOR) exit nodes; TOR is an anonymity tool used to conceal a user’s IP address, origin on connection and other identities. It bounces communication through several intermediate nodes, each in encrypted and with all this together, it is able to achieve this level of anonymity.&lt;/p&gt;
+&lt;h2 id=&quot;the-project&quot;&gt;The project&lt;/h2&gt;
+&lt;p&gt;There are two parts that are benchmarked: the lightweight encryption/decryption tested against AES and the lightweight hash functions tested against SHA-256.&lt;/p&gt;
 
-&lt;p&gt;The GitHub account associated with the leak included Paige Thompson’s full name, and resume. More information about Paige Thompson, the attacker, is provided below. Furthermore, open research by the FBI agent in charge located a Meetup group that is hosted by Paige Thomson, or alias “Erratic”, and this Meetup also has a Slack channel. On June 26th and 27th, Thompson was openly active in posting various file names from the stolen files in the slack group. On July 4th, Thompson again posted a message asking for help about one of the stolen data. For the next few weeks, Thompson was active on her social media account, of which some had users name “Erratic”, with this information and some of her posts the FBI was able to cross reference images posted on her social media accounts and slack to conclude she is the attacker. Further, her twitter account contacted Capital One on June 18th with a message of her admitting to having data and “dropping” it first.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Encryption &amp;amp; Decryption algorithms
+Four algorithms where tested in total: &lt;a href=&quot;https://csrc.nist.gov/CSRC/media/Projects/Lightweight-Cryptography/documents/round-1/spec-doc/ace-spec.pdf&quot;&gt;ACE&lt;/a&gt;, &lt;a href=&quot;https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/status-update-sep2020/PHOTON-Beetle_software_update_18Sep2020.pdf&quot;&gt;Photon-Beetle&lt;/a&gt;, &lt;a href=&quot;https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/status-update-sep2020/Saturnin_update.pdf&quot;&gt;Saturin-Short&lt;/a&gt;, and finally &lt;a href=&quot;https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/spec-doc-rnd2/pyjamask-spec-round2.pdf&quot;&gt;Pyjamask&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Hash algorithms
+Three lightweight hash algorithms that are ACE, Photon-Beetle, and Saturnin.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Finally, on July 26th, the FBI agent obtained a search warrant and on the 29th raided Paige Thompsons residence, arrested her and seized electrons for further evidence.&lt;/p&gt;
+&lt;p&gt;The project consisted of taking the four cryptographic algorithms along with the three hash algorithms to benchmark them against AES-128 and SHA-256. The first step was to add a minor modification to allow the API functions (encrypt, decrypt, and hash) to accept external files that vary in sizes from 4kb to 4mb), then add a timer to measure the elapsed time each function takes. However, AES had an extra modification to include an associated data (AD), to make it a fair comparison with the lightweight algorithms. The AD was added by including an HMAC to the AES, then the AES algorithm was incorporated to a similar manner to that of the lightweight algorithm API to allow the same parameters when testing.&lt;/p&gt;
 
-&lt;h4 id=&quot;damage-of-the-attack&quot;&gt;Damage of the Attack:&lt;/h4&gt;
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
 
-&lt;p&gt;The final result of the attack is the leak of 100 million Americans, and 6 million Canadians personal information. Fortunately, the authorities and Capital One believe that the data so far was not used for any fraudulent or criminal activities. As well, the attacker stated to the investigators that she did not sell or share the data.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comparison of all four LWC &amp;amp; AES
+&lt;img src=&quot;/assets/img/posts/lwc/encryption.png&quot; alt=&quot;encryption&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pyjamask, Saturnin &amp;amp; AES
+&lt;img src=&quot;/assets/img/posts/lwc/enc_pyjama_saturnin_aes.png&quot; alt=&quot;encryption&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comparison of all three LWC Hashes &amp;amp; SHA-256 
+&lt;img src=&quot;/assets/img/posts/lwc/hash.png&quot; alt=&quot;encryption&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Saturnin-Hash &amp;amp; SHA-256
+&lt;img src=&quot;/assets/img/posts/lwc/saturnin_sha.png&quot; alt=&quot;encryption&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;####About the Attacker:
-Paige Thompson, is a former Amazon employee who worked as a systems’ engineer. Her previous experiences were all related to software and system engineering, systems architecture, and systems administrator. Her nickname as well that is used throughout her social media accounts and GitHub is “Erratic”. This helped the investigators to further connect the dots, as she was very active on some platforms such as Slack and Twitter. Nonetheless, the attacker was very careless to talk openly about her activities on twitter and tweeting about finding various data on Amazon servers, and her techniques. Thompson’s ultimate goal to attack Capital One is not entirely known, however she was arrested by the authorities on July 29th, less than a month after the initial tip to Capital One. Her charge was of computer fraud and abuse for an intrusion on the stored data of Capital One Financial Corporation.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Lightweight cryptographic algorithms are needed to ensure the security of highly constrained devices such as RFIDs, sensor networks, and IoT devises to mention a few. To determine what a lightweight algorithm would be, it should perform faster processing than the conventional algorithms, contain a smaller size code and executable. This report examines four lightweight authenticated encryption with associated data (AEAD) and hash algorithms that are: &lt;a href=&quot;https://csrc.nist.gov/CSRC/media/Projects/Lightweight-Cryptography/documents/round-1/spec-doc/ace-spec.pdf&quot;&gt;ACE&lt;/a&gt;, &lt;a href=&quot;https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/status-update-sep2020/PHOTON-Beetle_software_update_18Sep2020.pdf&quot;&gt;Photon-Beetle&lt;/a&gt;, &lt;a href=&quot;https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/status-update-sep2020/Saturnin_update.pdf&quot;&gt;Saturin-Short&lt;/a&gt;, and finally &lt;a href=&quot;https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/spec-doc-rnd2/pyjamask-spec-round2.pdf&quot;&gt;Pyjamask&lt;/a&gt; that were submitted to NIST completion and succeeded to the second round.&lt;/p&gt;
 
-&lt;h4 id=&quot;discussion&quot;&gt;Discussion:&lt;/h4&gt;
-
-&lt;p&gt;There are a few mechanisms that could have prevented this breach. Firstly, the server misconfiguration that allowed is, is very common. Thus, a third-party examination of their servers would have greatly helped, thus is fairly possible by the IT department. As well, Capital One could have implemented a mechanism that is trigger if some commands are executed, as mentioned above, the logs showed that the certain commands executed by the attacker were present. This is important for two main reasons: system integrity and data confidentiality. The data should only be accessed if it is needed with the proper authorization, and any execution to the servers should be verified. Again, this is fairly feasible.&lt;/p&gt;
-
-&lt;p&gt;What is also interesting about this incident is the timeline. The attacker had multiple access to the servers without any problems or the knowledge of Capital One beginning March 2019, and the attacker’s arrest was only 5 months after. Without the tip from the random person, the data could still be online or even worst used for fraudulent activities, by the attacker or by any person online since the data was there. As well, the tip came almost 2 months after the attack, meaning the data was online for anyone to see. This brings the question if Capital One is aware what activities is happening with their data internally with employees or externally.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-Resources&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Brandom, R. (2019, July 31). The Capital One breach is more complicated than it looks. The Verge. Retrieved from https://www.theverge.com/2019/7/31/20748886capital-one-breach-hack-thompson-security-data&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Martini, J. (2019, July 29). Thompson Complaint. Retrieved from https://www.justice.gov/usao-wdwa/press-release/file/1188626/download&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Thorne, J. (2019, August 23). Capital One Hacking Suspect Paige Thompson Appears in Court, Ordered to Remain in Custody. Retrieved from https://www.geekwire.com/2019/capital-one-hacking-suspect-paige-thompson-appears-court-ordered-remain-custody/&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;U.S Attorney’s Office. (2019, July 29). Seattle Tech Worker Arrested for Data Theft Involving Large Financial Services Company. Retrieved from https://www.justice.gov/usao-wdwa/pr/seattle-tech-worker-arrested-data-theft-involving-large-financial-services-company&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;UpGuard. (24 July 2019). How to Minimize Cyber Risk in Microsoft Environments. Retrieved from https://www.upguard.com/blog/minimizing-cyber-risk-in-microsoft-environments&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">Summary:</summary></entry></feed>
+&lt;p&gt;As the results show, Pyjamask and Saturnin-Short in fact performed faster than AES by about three times, whereas SHA-256 hash showed much faster than its respective lightweight hash.&lt;/p&gt;</content><author><name></name></author><summary type="html">Cryptography Cryptography is one the most important security elements of computer systems and communications today. The idea is to ensure the confidentiality and integrity of information. Cryptography consists of two parts: encryption and decryption. Encryption converts your message/ data into an unreadable text that cannot be understood. Where as decryption is the opposite and converts the encrypted message to make to readable.</summary></entry></feed>

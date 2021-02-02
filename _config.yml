@@ -44,7 +44,7 @@ plugins:
 
 navigation: # Navigation links
   - { name: 'Home', link: '/' }
-  - { name: 'Me', link: '/about' }
+  # - { name: 'Me', link: '/about' }
   - { name: 'Resume', link: '/assets/resume.pdf' }
   
 # Exclude from processing.
